@@ -97,7 +97,16 @@ export default function Home() {
               <span className="clip-number">0{index + 1}</span>
               {index < 3 ? (
                 <div className="clip-with-caption">
-                  <video className="batting-video" controls playsInline preload="metadata" aria-label={label}>
+                  <video
+                    className="batting-video"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    aria-label={label}
+                    onLoadedMetadata={(event) => {
+                      if (index === 2) event.currentTarget.volume = 0.35;
+                    }}
+                  >
                     <source src={assetPath(`/videos/batting-clip-${index + 1}.mp4`)} type="video/mp4" />
                     Your browser does not support this video.
                   </video>
