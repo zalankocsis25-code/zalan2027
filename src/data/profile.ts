@@ -54,8 +54,7 @@ export const profile = {
     ["Graduation", "2027"],
     ["Primary position", "Catcher"], ["Secondary position", "First Base"],
     ["Height", "194 cm / 6′4″"], ["Weight", "82 kg / 181 lb"], ["Bats / Throws", "Right / Right"],
-    ["2026 European Championship Group A jersey", "#20"],
-    ["2025 European Championship Group B jersey", "#15"],
+    ["Team Hungary U18 — European Championships", "#20 (2026 Group A) | #15 (2025 Group B)"],
     ["Spanish club jersey", "#25"],
     ["National team", "Hungary U18"], ["Current club", "Club Beisbol Softbol Barcelona"],
   ],
@@ -109,7 +108,7 @@ export const profile = {
       url: "https://www.wbsceurope.org/en/events/2026-u-18-eurobaseball/teams/40914/players/768899",
       image: "/images/timeline-hungary-right.jpg",
       imageAlt: "With the Hungary U18 National Team",
-      description: "National-team player since 2019, wearing jersey #20 for Hungary, including at the 2026 U-18 Baseball European Championship in Italy.",
+      description: "National-team player since 2019. Represented Team Hungary U18 at the European Championships wearing jersey #20 in the 2026 Group A tournament and jersey #15 in the 2025 Group B tournament.",
     },
     {
       period: "2022–2024",
