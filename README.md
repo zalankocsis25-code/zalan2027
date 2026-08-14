@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zalan Kocsis Baseball Recruiting
 
-## Getting Started
+A responsive baseball recruiting website for Zalan Kocsis, built with Next.js, React, TypeScript, Tailwind CSS, Lucide React, and Motion.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Most profile content is stored in `src/data/profile.ts`. Images and videos are in `public/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## GitHub Pages
 
-## Learn More
+The project exports a fully static website and includes an automatic GitHub Pages deployment workflow.
 
-To learn more about Next.js, take a look at the following resources:
+1. Push the repository to GitHub using the `main` branch.
+2. In the repository, open **Settings → Pages**.
+3. Under **Build and deployment**, choose **GitHub Actions** as the source.
+4. The workflow in `.github/workflows/deploy-pages.yml` builds and publishes the website after every push to `main`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The published address will be:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`https://YOUR-GITHUB-USERNAME.github.io/zalan-baseball-recruiting/`
 
-## Deploy on Vercel
+## Privacy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Only the public recruiting résumé is stored in this repository. Private contact details and the private recruiting résumé are intentionally excluded through `.gitignore`.
