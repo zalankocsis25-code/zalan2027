@@ -94,9 +94,9 @@ a { color: inherit; text-decoration: none; }
 .clip-note { color: #a9bfcd; font-size: 12px; }
 .batting-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #081f2e; }
 .clip-video-only { position: absolute; inset: 0; }
-.clip-with-caption { position: absolute; inset: 0; display: grid; grid-template-rows: minmax(0,1fr) auto; background: #081f2e; }
-.clip-with-caption .batting-video { position: relative; inset: auto; min-height: 0; }
-.clip-description { margin: 0 !important; padding: 18px 22px 20px; color: #d9e5ec; background: #0b2638; border-top: 1px solid #496578; font-size: 13px; font-weight: 500 !important; line-height: 1.55; text-align: left; }
+.clip-with-caption { position: absolute; inset: 0; display: grid; grid-template-rows: minmax(0,1fr) 150px; background: #081f2e; }
+.clip-with-caption .batting-video { position: relative; inset: auto; min-width: 0; min-height: 0; display: block; }
+.clip-description { height: 100%; margin: 0 !important; padding: 18px 22px 20px; color: #d9e5ec; background: #0b2638; border-top: 1px solid #496578; font-size: 13px; font-weight: 500 !important; line-height: 1.55; text-align: left; }
 .video-meta { display: flex; justify-content: space-between; padding: 16px 7vw; color: #9db4c2; font: 600 11px/1 var(--font-geist-mono); }
 .catching-heading { margin: 74px 7vw 34px; text-align: center; }
 .catching-heading h2 { margin-inline: auto; }
@@ -229,6 +229,7 @@ footer strong { color: white; } footer a { margin-left: auto; color: white; text
   .photo-frame { height: 330px; }
   .section-heading { grid-template-columns: 1fr; }
   .profile-grid, .academic-layout { grid-template-columns: 1fr; }
+  .clip-with-caption { grid-template-rows: minmax(0,1fr) 190px; }
 }
 @media (max-width: 640px) {
   html { scroll-padding-top: 64px; } .nav-shell { height: 64px; padding-inline: 5vw; }
@@ -243,6 +244,8 @@ footer strong { color: white; } footer a { margin-left: auto; color: white; text
   .section h2, .contact-section h2 { font-size: 39px; }
   .video-stage { grid-template-columns: 1fr; }
   .video-placeholder { min-height: 62vh; border-right: 0; border-bottom: 1px solid #496578; }
+  .clip-with-caption { grid-template-rows: minmax(0,1fr) auto; }
+  .clip-description { min-height: 124px; }
   .video-placeholder:last-child { border-bottom: 0; }
   .catching-heading { margin: 58px 5vw 28px; display: block; }
   .catching-heading p { margin-top: 12px; }
