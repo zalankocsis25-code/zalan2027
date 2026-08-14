@@ -22,9 +22,9 @@ The project exports a fully static website and includes an automatic GitHub Page
 3. Under **Build and deployment**, choose **GitHub Actions** as the source.
 4. The workflow in `.github/workflows/deploy-pages.yml` builds and publishes the website after every push to `main`.
 
-The published address will be:
+Primary website address:
 
-`https://YOUR-GITHUB-USERNAME.github.io/zalan-baseball-recruiting/`
+`https://zalankocsis2027.com/`
 
 ## Privacy
 
