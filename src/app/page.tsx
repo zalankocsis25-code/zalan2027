@@ -102,6 +102,7 @@ export default function Home() {
                     controls
                     playsInline
                     preload="metadata"
+                    poster={assetPath(`/images/video-posters/batting-clip-${index + 1}.jpg`)}
                     aria-label={label}
                     onLoadedMetadata={(event) => {
                       if (index === 2) event.currentTarget.volume = 0.35;
@@ -142,7 +143,14 @@ export default function Home() {
               <span className="clip-number">0{index + 1}</span>
               {index < 3 ? (
                 <div className="clip-with-caption">
-                  <video className="batting-video" controls playsInline preload="metadata" aria-label={`Catching clip ${index + 1} — ${action}`}>
+                  <video
+                    className="batting-video"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster={assetPath(`/images/video-posters/catching-clip-${index + 1}.jpg`)}
+                    aria-label={`Catching clip ${index + 1} — ${action}`}
+                  >
                     <source src={assetPath(`/videos/catching-clip-${index + 1}.mp4`)} type="video/mp4" />
                     Your browser does not support this video.
                   </video>
@@ -169,14 +177,14 @@ export default function Home() {
         <motion.div {...reveal} className="catcher-skill-row">
           <article className="catcher-skill-clip">
             <div className="skill-clip-heading"><span>04</span><strong>Receiving</strong><small>9.2 sec</small></div>
-            <video controls playsInline preload="metadata" aria-label="Catcher receiving clip">
+            <video controls playsInline preload="metadata" poster={assetPath("/images/video-posters/catching-receiving.jpg")} aria-label="Catcher receiving clip">
               <source src={assetPath("/videos/catching-receiving.mp4")} type="video/mp4" />
               Your browser does not support this video.
             </video>
           </article>
           <article className="catcher-skill-clip">
             <div className="skill-clip-heading"><span>05</span><strong>Blocking and fielding</strong><small>14.5 sec</small></div>
-            <video controls playsInline preload="metadata" aria-label="Catcher blocking clip">
+            <video controls playsInline preload="metadata" poster={assetPath("/images/video-posters/catching-blocking.jpg")} aria-label="Catcher blocking clip">
               <source src={assetPath("/videos/catching-blocking.mp4")} type="video/mp4" />
               Your browser does not support this video.
             </video>
