@@ -43,6 +43,11 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  verification: {
+    other: {
+      "msvalidate.01": "D547CE2BFDFF529B10BBDAD35E387A04",
+    },
+  },
   openGraph: {
     type: "website",
     url: "/",
