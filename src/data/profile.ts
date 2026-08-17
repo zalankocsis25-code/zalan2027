@@ -106,13 +106,13 @@ export const profile = {
     count: "4",
     title: "Selected to the Catalunya national team",
     note: "Selected to the Catalunya national team four times between 2024 and 2026 by the Federació Catalana de Beisbol i Softbol. Every call-up is named in the federation's official technical circular, linked below.",
-    span: "2024 — 2026",
+    span: "2024–2026",
     callUps: [
       {
         year: "2024",
         squad: "Catalunya U16",
         event: "Catalunya Baseball Cup 2024",
-        detail: "17–20 October · Sant Boi, Viladecans and Barcelona",
+        detail: "17–20 October",
         circular: "CIR. TEC. 35/24",
         url: "https://www.fcbs.cat/wp/wp-content/uploads/2024/10/Circular_Tecnica_35.24_Seleccions_Catalanes_Catalunya_Baseball_Cup_2024.pdf",
       },

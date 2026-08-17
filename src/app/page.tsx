@@ -309,9 +309,9 @@ export default function Home() {
         </motion.article>
         <motion.article {...reveal} className="selection-band">
           <div className="selection-mark">
-            <strong>{profile.catalanSelections.count}<sup>×</sup></strong>
-            <span>{profile.catalanSelections.title}</span>
-            <small>{profile.catalanSelections.span}</small>
+            <strong className="selection-count">{profile.catalanSelections.count}<span>×</span></strong>
+            <p className="selection-label">{profile.catalanSelections.title}</p>
+            <small className="selection-span">{profile.catalanSelections.span}</small>
           </div>
           <div className="selection-body">
             <p className="eyebrow">Federació Catalana de Beisbol i Softbol selections</p>
