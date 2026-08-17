@@ -62,7 +62,7 @@ export const profile = {
   wbscStats: [["7", "Games"], ["9", "Hits"], ["6", "RBI"], [".360", "AVG"], [".407", "OBP"], [".847", "OPS"]],
   fcbsSeason: {
     title: "Campionat de Catalunya - Sub 19",
-    period: "Regular season · March/April – June/July",
+    period: "Regular season · March – June",
     achievement: "3rd-highest batting average",
     fieldingAchievement: "No. 1 in fielding percentage",
     rankings: [
@@ -82,7 +82,7 @@ export const profile = {
   },
   divisionTwoSeason: {
     title: "CAMPIONAT DE CATALUNYA - SENIOR 2DA",
-    period: "Regular season · March/April – June/July",
+    period: "Regular season · March – July",
     url: "https://www.fcbs.cat/campionat/2026/b_divisio2/stats/lgplyrs.htm",
     stats: [[".345", "AVG"], [".513", "OBP"], [".483", "SLG"], ["10", "Hits"], ["7", "RBI"], ["1", "Home run"]],
     summary: "8 games / 8 starts • 29 at-bats • 10 runs • 9 walks",
