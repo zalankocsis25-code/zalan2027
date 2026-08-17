@@ -35,7 +35,7 @@ export const profile = {
     },
     {
       year: "2024",
-      title: "Moved to British College of Gavà",
+      title: "Moved to British College of Gavà (Barcelona)",
       description: "Continued my education near Barcelona while developing in a new academic and sporting environment.",
     },
     {
@@ -83,7 +83,7 @@ export const profile = {
     title: "CAMPIONAT DE CATALUNYA - SENIOR 2DA",
     url: "https://www.fcbs.cat/campionat/2026/b_divisio2/stats/lgplyrs.htm",
     stats: [[".345", "AVG"], [".513", "OBP"], [".483", "SLG"], ["10", "Hits"], ["7", "RBI"], ["1", "Home run"]],
-    summary: "8 games / 8 starts • 29 at-bats • 10 runs • 9 walks • 5-for-7 stolen bases",
+    summary: "8 games / 8 starts • 29 at-bats • 10 runs • 9 walks",
     fieldingAchievement: "1st in chances and putouts",
     fieldingStats: [[".966", "FLD%"], ["89", "Chances"], ["80", "Putouts"], ["6", "Assists"], ["3", "Errors"], ["6", "Caught stealing"]],
   },
