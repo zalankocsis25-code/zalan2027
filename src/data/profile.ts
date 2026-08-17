@@ -57,6 +57,7 @@ export const profile = {
     ["Team Hungary U18 — European Championships", "#20 (2026 Group A) | #15 (2025 Group B)"],
     ["Spanish club jersey", "#25"],
     ["National team", "Hungary U18"], ["Current club", "Club Beisbol Softbol Barcelona"],
+    ["Catalunya national team", "4× selected (2024–2026)"],
   ],
   wbscStats: [["7", "Games"], ["9", "Hits"], ["6", "RBI"], [".360", "AVG"], [".407", "OBP"], [".847", "OPS"]],
   fcbsSeason: {
@@ -101,6 +102,46 @@ export const profile = {
     fieldingStats: [["1.000", "FLD%"], ["21", "Chances"], ["18", "Putouts"], ["3", "Assists"], ["0", "Errors"], ["2", "Caught stealing"]],
     fieldingSummary: "2 fielding double plays • 0 stolen bases allowed",
   },
+  catalanSelections: {
+    count: "4",
+    title: "Selected to the Catalunya national team",
+    note: "Selected to the Catalunya national team four times between 2024 and 2026 by the Federació Catalana de Beisbol i Softbol. Every call-up is named in the federation's official technical circular, linked below.",
+    span: "2024 — 2026",
+    callUps: [
+      {
+        year: "2024",
+        squad: "Catalunya U16",
+        event: "Catalunya Baseball Cup 2024",
+        detail: "17–20 October · Sant Boi, Viladecans and Barcelona",
+        circular: "CIR. TEC. 35/24",
+        url: "https://www.fcbs.cat/wp/wp-content/uploads/2024/10/Circular_Tecnica_35.24_Seleccions_Catalanes_Catalunya_Baseball_Cup_2024.pdf",
+      },
+      {
+        year: "2025",
+        squad: "Selecció Catalana U18",
+        event: "Catalunya Baseball & Softball Week 2025",
+        detail: "12–16 March",
+        circular: "CIR. TEC. 13/25",
+        url: "https://www.fcbs.cat/wp/wp-content/uploads/2025/03/Circular_Tecnica_13.25_Seleccio%CC%81_Catalana_U18_Beisbol_2025.pdf",
+      },
+      {
+        year: "2025",
+        squad: "Seleccions Catalanes Sub-18",
+        event: "Catalunya Baseball Cup 2025",
+        detail: "October",
+        circular: "CIR. TEC. 34/25",
+        url: "https://www.fcbs.cat/wp/wp-content/uploads/2025/10/Circular_Tecnica_34.25_Seleccions_Catalanaes_Catalunya_Baseball_Cup_2025.pdf",
+      },
+      {
+        year: "2026",
+        squad: "Catalunya Team U18",
+        event: "Catalunya Baseball & Softball Week 2026",
+        detail: "12–15 March",
+        circular: "CIR. TEC. 10/26",
+        url: "https://www.fcbs.cat/wp/wp-content/uploads/2026/03/10.26_Circular_Tecnica_Catalunya_Team_U18_Beisbol_CBSW_2026.pdf",
+      },
+    ],
+  },
   baseballTimeline: [
     {
       period: "2019–Present",
@@ -127,5 +168,5 @@ export const profile = {
       description: "Continued my development wearing jersey #25 for Club Beisbol Softbol Barcelona and in Spanish competitions.",
     },
   ],
-  metrics: [{ label: "Pop time", value: "1.95–2.1 sec" }],
+  metrics: [{ label: "Pop time", value: "1.97–2.05 sec" }],
 } as const;

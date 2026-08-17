@@ -6,6 +6,7 @@ import {
   ArrowUpRight,
   Award,
   Download,
+  FileText,
   Gauge,
   Play,
   Ruler,
@@ -59,7 +60,7 @@ export default function Home() {
         <div className="hero-lines" aria-hidden="true" />
         <div className="hero-copy">
           <div className="status"><span /> Available for 2027 university recruitment</div>
-          <p className="hero-kicker">Hungary U18 National Team · Club Beisbol Softbol Barcelona</p>
+          <p className="hero-kicker">Hungary U18 National Team · Club Beisbol Softbol Barcelona · 4× Catalunya national team</p>
           <h1>Zalan Kocsis</h1>
           <p className="hero-role">Catcher <b>•</b> First Baseman <b>•</b> R/R</p>
           <p className="hero-intro">194 cm catcher and first baseman representing Hungary U18 and Club Beisbol Softbol Barcelona. IB Diploma student intending to study mechanical engineering.</p>
@@ -215,6 +216,31 @@ export default function Home() {
             return <div key={metric.label}><Icon size={21} /><span>{metric.label}</span><strong>{metric.value}</strong></div>;
           })}
         </motion.div>
+        <motion.article {...reveal} className="selection-band">
+          <div className="selection-mark">
+            <strong>{profile.catalanSelections.count}<sup>×</sup></strong>
+            <span>{profile.catalanSelections.title}</span>
+            <small>{profile.catalanSelections.span}</small>
+          </div>
+          <div className="selection-body">
+            <p className="eyebrow">Federació Catalana de Beisbol i Softbol selections</p>
+            <p className="selection-note">{profile.catalanSelections.note}</p>
+            <ol className="selection-list">
+              {profile.catalanSelections.callUps.map((callUp) => (
+                <li key={callUp.circular}>
+                  <time>{callUp.year}</time>
+                  <div>
+                    <strong>{callUp.squad}</strong>
+                    <span>{callUp.event} · {callUp.detail}</span>
+                  </div>
+                  <a href={callUp.url} target="_blank" rel="noreferrer">
+                    <FileText size={15} /> Official circular {callUp.circular} <ArrowUpRight size={15} />
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </motion.article>
         <motion.article {...reveal} className="season-card">
           <div className="season-copy">
             <p className="eyebrow">Official FCBS season statistics</p>

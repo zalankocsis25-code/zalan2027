@@ -1,0 +1,15 @@
+# Keep binary assets byte-exact.
+#
+# core.autocrlf=true is common on Windows checkouts. Git auto-detects binary
+# files by looking for a NUL byte in the first 8000 bytes, but a ReportLab PDF
+# begins with a plain-text header and its first NUL falls past that window, so
+# Git misreads the recruiting resumes as text and rewrites LF -> CRLF on
+# checkout, corrupting them. Mark binaries explicitly.
+*.pdf binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.ico binary
+*.svg -text
+*.mp4 binary
+*.webm binary
