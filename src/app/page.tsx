@@ -221,6 +221,7 @@ export default function Home() {
           <div className="season-copy">
             <p className="eyebrow">Official FCBS season statistics</p>
             <h3>{profile.fcbsSeason.title}</h3>
+            <p className="season-period">{profile.fcbsSeason.period}</p>
             <div className="season-rankings">
               {profile.fcbsSeason.rankings.map((ranking) => {
                 const place = ranking.startsWith("Tied 2nd") ? 2 : ranking.startsWith("3rd") ? 3 : 1;
@@ -256,6 +257,7 @@ export default function Home() {
           <div className="season-copy">
             <p className="eyebrow">Official FCBS Division 2 statistics</p>
             <h3>{profile.divisionTwoSeason.title}</h3>
+            <p className="season-period">{profile.divisionTwoSeason.period}</p>
             <p>{profile.divisionTwoSeason.summary}</p>
             <a href={profile.divisionTwoSeason.url} target="_blank" rel="noreferrer">
               View official FCBS Division 2 statistics <ArrowUpRight size={17} />
