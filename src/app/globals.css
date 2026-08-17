@@ -268,9 +268,13 @@ footer strong { color: white; } footer a { margin-left: auto; color: white; text
   .section-heading .eyebrow { margin: 0 0 12px; }
   .section h2, .contact-section h2 { font-size: 39px; }
   .video-stage { grid-template-columns: 1fr; }
-  .video-placeholder { min-height: 62vh; border-right: 0; border-bottom: 1px solid #496578; }
-  .clip-with-caption { grid-template-rows: minmax(0,1fr) auto; }
-  .clip-description { min-height: 124px; }
+  /* Phones: let each clip take its own 16:9 height instead of a fixed 62vh
+     block. The old height letterboxed the video inside a tall dark panel and
+     pushed the caption below the fold. */
+  .video-placeholder { min-height: 0; padding: 0; display: block; border-right: 0; border-bottom: 1px solid #496578; }
+  .clip-with-caption { position: static; display: block; }
+  .clip-with-caption .batting-video { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; }
+  .clip-description { min-height: 0; height: auto; padding: 15px 18px 17px; }
   .video-placeholder:last-child { border-bottom: 0; }
   .catching-heading { margin: 58px 5vw 28px; display: block; }
   .catching-heading p { margin-top: 12px; }
