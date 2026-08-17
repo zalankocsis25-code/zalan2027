@@ -217,31 +217,6 @@ export default function Home() {
             return <div key={metric.label}><Icon size={21} /><span>{metric.label}</span><strong>{metric.value}</strong></div>;
           })}
         </motion.div>
-        <motion.article {...reveal} className="selection-band">
-          <div className="selection-mark">
-            <strong>{profile.catalanSelections.count}<sup>×</sup></strong>
-            <span>{profile.catalanSelections.title}</span>
-            <small>{profile.catalanSelections.span}</small>
-          </div>
-          <div className="selection-body">
-            <p className="eyebrow">Federació Catalana de Beisbol i Softbol selections</p>
-            <p className="selection-note">{profile.catalanSelections.note}</p>
-            <ol className="selection-list">
-              {profile.catalanSelections.callUps.map((callUp) => (
-                <li key={callUp.circular}>
-                  <time>{callUp.year}</time>
-                  <div>
-                    <strong>{callUp.squad}</strong>
-                    <span>{callUp.event} · {callUp.detail}</span>
-                  </div>
-                  <a href={callUp.url} target="_blank" rel="noreferrer">
-                    <FileText size={15} /> Official circular {callUp.circular} <ArrowUpRight size={15} />
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </motion.article>
         <motion.article {...reveal} className="season-card">
           <div className="season-copy">
             <p className="eyebrow">Official FCBS season statistics</p>
@@ -330,6 +305,32 @@ export default function Home() {
             {profile.copaCatalunyaSeason.fieldingStats.map(([value, label]) => (
               <div key={label}><strong>{value}</strong><span>{label}</span></div>
             ))}
+          </div>
+        </motion.article>
+        <motion.article {...reveal} className="selection-band">
+          <div className="selection-mark">
+            <strong>{profile.catalanSelections.count}<sup>×</sup></strong>
+            <span>{profile.catalanSelections.title}</span>
+            <small>{profile.catalanSelections.span}</small>
+          </div>
+          <div className="selection-body">
+            <p className="eyebrow">Federació Catalana de Beisbol i Softbol selections</p>
+            <p className="selection-note">{profile.catalanSelections.note}</p>
+            <ol className="selection-list">
+              {profile.catalanSelections.callUps.map((callUp) => (
+                <li key={callUp.circular}>
+                  <time>{callUp.year}</time>
+                  <div>
+                    <strong>{callUp.squad}</strong>
+                    <span>{callUp.event} · {callUp.detail}</span>
+                  </div>
+                  <a href={callUp.url} target="_blank" rel="noreferrer">
+                    <FileText size={15} /> Official circular {callUp.circular} <ArrowUpRight size={15} />
+                  </a>
+                </li>
+              ))}
+            </ol>
+            <p className="selection-scope">{profile.catalanSelections.scope}</p>
           </div>
         </motion.article>
         <motion.div {...reveal} className="baseball-timeline">
