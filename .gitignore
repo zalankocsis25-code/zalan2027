@@ -45,3 +45,5 @@ next-env.d.ts
 
 # local scratch tooling
 /.tmp-video-poster-tool/
+# private recruiting résumé — safety net, it is generated in the separate private repo
+*Private*Resume*.pdf

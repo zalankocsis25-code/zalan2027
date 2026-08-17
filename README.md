@@ -26,6 +26,10 @@ Primary website address:
 
 `https://zalankocsis2027.com/`
 
+## Recruiting résumés
+
+The public résumé at `public/Zalan-Kocsis-Recruiting-Resume.pdf` is generated in a separate private repository ([zalankocsis25-code/zalan2027-resume](https://github.com/zalankocsis25-code/zalan2027-resume), kept as a sibling folder) together with the private résumé. Rebuild and copy it here with `python build_resume.py --publish` in that repo, then commit the updated PDF. Do not edit the PDF by hand; keep `src/data/profile.ts` and that repo's `resume_content.py` in sync.
+
 ## Privacy
 
-Only the public recruiting résumé is stored in this repository. Private contact details and the private recruiting résumé are intentionally excluded through `.gitignore`.
+Only the public recruiting résumé is stored in this repository. Private contact details and the private recruiting résumé live in the separate private repository and are additionally excluded here through `.gitignore`.
