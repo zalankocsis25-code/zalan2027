@@ -282,6 +282,7 @@ export default function Home() {
           <div className="season-copy">
             <p className="eyebrow">Official 2025 FCBS cup statistics</p>
             <h3>{profile.copaCatalunyaSeason.title}</h3>
+            <p className="season-period">{profile.copaCatalunyaSeason.period}</p>
             <p>{profile.copaCatalunyaSeason.summary}</p>
             <div className="season-rankings">
               {profile.copaCatalunyaSeason.rankings.map((ranking) => {

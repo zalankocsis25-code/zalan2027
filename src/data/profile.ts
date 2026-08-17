@@ -91,6 +91,7 @@ export const profile = {
   },
   copaCatalunyaSeason: {
     title: "2025 Copa Catalunya - Sub18",
+    period: "Regular season · September – December",
     url: "https://www.fcbs.cat/campionat/2025/b_sub18_copa/stats/lgplyrs.htm",
     stats: [[".500", "AVG"], [".722", "OBP"], [".800", "SLG"], ["5", "Hits"], ["6", "RBI"], ["1", "Home run"]],
     summary: "4 games / 4 starts • 10 at-bats • 7 runs • 8 walks",
