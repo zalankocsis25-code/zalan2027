@@ -106,7 +106,8 @@ export default function Home() {
                     poster={assetPath(`/images/video-posters/batting-clip-${index + 1}.jpg`)}
                     aria-label={label}
                     onLoadedMetadata={(event) => {
-                      if (index === 2) event.currentTarget.volume = 0.35;
+                      // Clip 3 has a loud commentator; start it 30% below the previous 0.35 default.
+                      if (index === 2) event.currentTarget.volume = 0.245;
                     }}
                   >
                     <source src={assetPath(`/videos/batting-clip-${index + 1}.mp4`)} type="video/mp4" />
