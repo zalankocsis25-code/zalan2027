@@ -126,7 +126,7 @@ export const profile = {
       },
       {
         year: "2025",
-        squad: "Seleccions Catalanes Sub-18",
+        squad: "Seleccions Catalanes U18",
         event: "Catalunya Baseball Cup 2025",
         detail: "October",
         circular: "CIR. TEC. 34/25",
