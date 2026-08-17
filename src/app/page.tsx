@@ -330,7 +330,6 @@ export default function Home() {
                 </li>
               ))}
             </ol>
-            <p className="selection-scope">{profile.catalanSelections.scope}</p>
           </div>
         </motion.article>
         <motion.div {...reveal} className="baseball-timeline">

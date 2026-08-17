@@ -107,7 +107,6 @@ export const profile = {
     title: "Selected to the Catalunya national team",
     note: "Selected to the Catalunya national team four times between 2024 and 2026 by the Federació Catalana de Beisbol i Softbol. Every call-up is named in the federation's official technical circular, linked below.",
     span: "2024 — 2026",
-    scope: "Squad selections. The season statistics on this page are from club and league competition, not from these national team tournaments.",
     callUps: [
       {
         year: "2024",
