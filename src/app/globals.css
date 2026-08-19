@@ -40,6 +40,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-lines { position: absolute; inset: 0; pointer-events: none; opacity: .55; background: linear-gradient(90deg, transparent 49.9%, rgba(23,105,170,.06) 50%, transparent 50.1%); background-size: 10vw 100%; }
 .hero-copy, .photo-frame { position: relative; z-index: 1; }
+.status-group { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
 .status { display: inline-flex; align-items: center; gap: 9px; color: var(--verified); font-size: 12px; font-weight: 720; }
 .status span { width: 8px; height: 8px; border-radius: 50%; background: var(--verified); }
 .hero-kicker { margin: 24px 0 0; color: var(--blue); font-size: 13px; font-weight: 700; }

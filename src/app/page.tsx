@@ -59,7 +59,10 @@ export default function Home() {
       <section id="home" className="hero">
         <div className="hero-lines" aria-hidden="true" />
         <div className="hero-copy">
-          <div className="status"><span /> Available for 2027 university recruitment</div>
+          <div className="status-group">
+            <div className="status"><span /> Available for 2027 university recruitment</div>
+            <div className="status"><span /> Registered with the NCAA Eligibility Center</div>
+          </div>
           <p className="hero-kicker">Hungary U18 National Team · Club Beisbol Softbol Barcelona · 4× Catalunya national team</p>
           <h1>Zalan Kocsis</h1>
           <p className="hero-role">Catcher <b>•</b> First Baseman <b>•</b> R/R</p>
